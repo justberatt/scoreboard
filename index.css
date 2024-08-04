@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: CursedTimerUlil-Aznm;
+    src: url(fonts/CursedTimerUlil-Aznm.ttf);
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+    background-color: #1B244A;
+    
+    max-width: 575px;
+    padding: .5em 0 2em 0;
+    margin: auto;
+}
+
+.board-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    line-height: 35px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+.score {
+    min-width: 155px;
+    height: 120px;
+    background-color: #080001;
+    border-radius: 5px;
+    border: 2px solid #080001;
+    margin-bottom: 1.6em;
+    padding-top: 17px;
+}
+
+.score-text {
+    font-family: CursedTimerUlil-Aznm;
+    color: #F94F6D;
+    text-align: center;
+    font-size: 90px;
+
+    margin: auto;
+    padding-top: 10px;
+}
+
+.btn-score__primary {
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    background: none;
+    font-family: CursedTimerUlil-Aznm;
+    color: #9AABD8;
+    cursor: pointer;
+    
+    margin-right: 6px;
+}
+
+.new-game,
+.start-timer {
+    background: none;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.new-game:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.new-game:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer {
+    display: flex;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.minutes,
+.seconds {
+    border: 3px solid #EEEEEE;
+    border-radius: 5px;
+    margin: .5em;
+    background-color: #080001;
+}
+
+.minutes-text,
+.seconds-text {
+    font-size: 50px;
+    font-family: CursedTimerUlil-Aznm;
+    color: #F94F6D;
+}
+
+.timer-colon {
+    align-self: center;
+    color: #EEEEEE;
+    font-weight: 700;
+}
